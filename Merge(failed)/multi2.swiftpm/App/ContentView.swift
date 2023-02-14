@@ -5,6 +5,7 @@ See the License.txt file for this sample’s licensing information.
 import SwiftUI
 
 struct ContentView: View {
+    let game = EmojiMemoryGame()
     var body: some View {
         TabView {
             HomeView()
@@ -26,7 +27,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Fun Facts", systemImage: "hand.thumbsup")
                 }
-            EmojiMemoryGameView()
+            EmojiMemoryGameView(game:game)
                 .tabItem {
                     Label("Fun Facts", systemImage: "hand.thumbsup")
                 }
