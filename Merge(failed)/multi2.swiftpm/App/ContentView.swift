@@ -26,6 +26,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Fun Facts", systemImage: "hand.thumbsup")
                 }
+            EmojiMemoryGameView()
+                .tabItem {
+                    Label("Fun Facts", systemImage: "hand.thumbsup")
+                }
         }
         
     }
